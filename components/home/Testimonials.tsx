@@ -50,7 +50,7 @@ export function Testimonials({ content }: TestimonialsProps) {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {testimonials.map((item, index) => (
+                    {testimonials.map((item: { quote: string, author: string, role: string, company: string }, index: number) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 30 }}

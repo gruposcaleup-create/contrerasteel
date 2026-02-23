@@ -15,11 +15,20 @@ export async function PATCH(request: Request, { params }: { params: Promise<{ id
 
     try {
         const body = await request.json();
+        const { status, respondedVia, tags, priority } = body;
+
+        const submissions = await getSubmissions();
+        const index = submissions.findIndex(s => s.id === id);
+
+        if (index === -1) {
+            return NextResponse.json({ error: 'Submission not found' }, { status: 404 });
+        }
+
         // Update fields
         if (status) submissions[index].status = status;
         if (respondedVia) submissions[index].respondedVia = respondedVia;
-        if (body.tags) submissions[index].tags = body.tags;
-        if (body.priority) submissions[index].priority = body.priority;
+        if (tags) submissions[index].tags = tags;
+        if (priority) submissions[index].priority = priority;
 
         await saveSubmissions(submissions);
 

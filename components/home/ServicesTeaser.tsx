@@ -68,7 +68,7 @@ export function ServicesTeaser({ content }: ServicesTeaserProps) {
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {services.map((service, index) => (
+                    {services.map((service: { title: string, description: string, image: string, link: string, number: string }, index: number) => (
                         <Link key={index} href={service.link}>
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
