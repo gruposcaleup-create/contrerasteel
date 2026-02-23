@@ -41,15 +41,15 @@ export function Hero({ content }: { content?: any }) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="mb-6 flex flex-col items-center justify-center overflow-hidden">
-                        <TextReveal className="text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-white leading-[0.9]">
+                    <div className="mb-6 flex flex-col items-center justify-center w-full">
+                        <TextReveal className="text-[14vw] sm:text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-white leading-[0.9]">
                             {heroContent.title}
                         </TextReveal>
-                        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 overflow-hidden mt-4">
-                            <TextReveal className="text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gray-400 leading-[0.9]" delay={0.2}>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 md:gap-8 mt-4 w-full">
+                            <TextReveal className="text-[9vw] sm:text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gray-400 leading-[0.9] text-center" delay={0.2}>
                                 {heroContent.subtitle1}
                             </TextReveal>
-                            <TextReveal className="text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gold leading-[0.9]" delay={0.4}>
+                            <TextReveal className="text-[9vw] sm:text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gold leading-[0.9] text-center" delay={0.4}>
                                 {heroContent.subtitle2}
                             </TextReveal>
                         </div>
