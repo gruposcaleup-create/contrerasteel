@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Building Steel",
+    "subtitle": "Building Legacy",
+    "description": "Structural steel erection and fabrication delivered with discipline, integrity, and extreme ownership.",
+    "ctaPrimary": "Request a Quote",
+    "ctaSecondary": "Our Capabilities",
+    "backgroundImage": "/1000000455.JPEG"
+  },
+  "intro": {
+    "heading": "Forged in Fire, Built for the Future",
+    "text": "At Contreras Steel, we don't just build structures; we build trust. With over 20 years of experience in the steel industry, we bring military-grade precision and unwavering commitment to every project. From complex commercial erections to custom fabrication, our team executes with safety, speed, and superior quality.",
+    "image": "/IMG_4562.jpg"
+  },
+  "servicesTeaser": {
+    "heading": "Our Capabilities",
+    "subheading": "Precision & Power",
+    "items": [
+      {
+        "title": "Structural Erection",
+        "description": "Safe and efficient erection of complex steel structures.",
+        "image": "/IMG_3383.jpg"
+      },
+      {
+        "title": "Custom Fabrication",
+        "description": "Precision fabrication for unique architectural needs.",
+        "image": "/dji_fly_20230309_160218_8_1678396403036_photo.jpg"
+      },
+      {
+        "title": "Bar Joist & Decking",
+        "description": "Expert installation of floor and roof systems.",
+        "image": "/DJI_20250328123428_0015_W.JPG"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "text": "Contreras Steel delivered ahead of schedule with zero safety incidents. Their team is disciplined and professional.",
+      "author": "Construction Manager, Big Build Co."
+    },
+    {
+      "text": "The quality of fabrication was outstanding. Everything fit perfectly on site.",
+      "author": "Architect, Design Firm"
+    }
+  ],
+  "values": {
+    "bannerText": "Discipline. Integrity. Extreme Ownership.",
+    "tickerText": " SAFETY FIRST • QUALITY ALWAYS • PRECISION EXECUTION • MILITARY GRADE • "
+  },
+  "about": {
+    "title": "Our Story",
+    "text": "Founded by veterans, Contreras Steel brings military discipline to the construction site...",
+    "image": "/about-bg.jpg"
+  },
+  "footer": {
+    "address": "123 Industrial Way, Steel City, TX 75000",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@contrerassteel.com",
+    "copyright": "© 2026 Contreras Steel LLC. All Rights Reserved."
+  },
+  "contactPage": {
+    "title": "Let’s Build Something Lasting.",
+    "subtitle": "We are ready to discuss your next project. Reach out to our team for estimates, capabilities, or partnership opportunities.",
+    "addressTitle": "Location",
+    "address": "800 2nd Ave NW, Cullman, AL 35055",
+    "phoneTitle": "Phone",
+    "phone": "+1 (256)-747-5012",
+    "emailTitle": "Email",
+    "email": "projects@contrerassteel.com",
+    "linkedinUrl": ""
+  },
+  "config": {
+    "replyEmail": "admin@contrerassteel.com",
+    "replyPhone": "15551234567",
+    "emailSignature": "\n\nBest regards,\nContreras Steel Team\nwww.contrerassteel.com"
+  }
+}

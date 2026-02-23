@@ -1,0 +1,98 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { MagneticButton } from "@/components/ui/MagneticButton";
+import { TextReveal } from "@/components/ui/TextReveal";
+import Link from "next/link";
+import Image from "next/image";
+
+export function Hero({ content }: { content?: any }) {
+    const heroContent = content?.hero || {
+        title: "Building Steel",
+        subtitle: "Building Legacy",
+        description: "Structural steel erection and fabrication delivered with discipline, integrity, and extreme ownership.",
+        ctaPrimary: "Request a Quote",
+        ctaSecondary: "Our Capabilities"
+    };
+
+    return (
+        <section className="relative h-[100vh] flex items-center justify-center overflow-hidden bg-void-black">
+            {/* Background Video/Image Placeholder - Industrial Dark Steel */}
+            <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 bg-black/60 z-10" /> {/* Canvas Overlay */}
+                <div className="absolute inset-0 w-full h-full opacity-50">
+                    <Image
+                        src="/1000000455.JPEG"
+                        alt="Hero Background"
+                        fill
+                        className="object-cover object-center"
+                        quality={100}
+                        priority
+                        unoptimized
+                    />
+                </div>
+                {/* Note: Video background would go here in production */}
+            </div>
+
+            <div className="relative z-20 container mx-auto px-4 text-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <div className="mb-6 flex flex-col items-center justify-center overflow-hidden">
+                        <TextReveal className="text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-white leading-[0.9]">
+                            {heroContent.title}
+                        </TextReveal>
+                        <div className="flex gap-4 md:gap-8 overflow-hidden">
+                            <TextReveal className="text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-gray-500 leading-[0.9]" delay={0.2}>
+                                {heroContent.subtitle.split(' ')[0]}
+                            </TextReveal>
+                            <TextReveal className="text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-gold leading-[0.9]" delay={0.4}>
+                                {heroContent.subtitle.split(' ').slice(1).join(' ')}
+                            </TextReveal>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1, duration: 0.8 }}
+                    className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-manrope font-light tracking-wide leading-relaxed"
+                >
+                    {heroContent.description}
+                </motion.p>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1.2, duration: 0.6 }}
+                    className="flex flex-col md:flex-row items-center justify-center gap-6"
+                >
+                    <Link href="/contact">
+                        <MagneticButton variant="primary" className="min-w-[200px]">
+                            {heroContent.ctaPrimary}
+                        </MagneticButton>
+                    </Link>
+                    <Link href="/services">
+                        <MagneticButton variant="outline" className="min-w-[200px] border-white text-white hover:bg-white/10 hover:text-white">
+                            {heroContent.ctaSecondary}
+                        </MagneticButton>
+                    </Link>
+                </motion.div>
+            </div>
+
+            {/* Scroll indicator */}
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 2, duration: 1 }}
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500"
+            >
+                <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-[#D4AF37] to-transparent" />
+                <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+            </motion.div>
+        </section>
+    );
+}
