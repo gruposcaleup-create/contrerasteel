@@ -25,7 +25,7 @@ export function Intro({ content }: { content?: any }) {
                         <h2 className="text-4xl md:text-7xl font-oswald font-bold uppercase tracking-tight mb-8 leading-none">
                             {introContent.heading.split(' ')[0]} <span className="text-gold">{introContent.heading.split(' ').slice(1).join(' ')}</span>
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-400 font-manrope leading-relaxed mb-8 max-w-lg border-l-2 border-gold pl-6">
+                        <p className="text-lg md:text-xl text-gray-400 font-manrope leading-relaxed mb-8 max-w-lg border-l-2 border-gold pl-6 whitespace-pre-line">
                             {introContent.text}
                         </p>
                         <Link href="/about">

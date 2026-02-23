@@ -42,9 +42,11 @@ export function SafetyHero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.2, duration: 0.6 }}
-                    className="mt-12 text-lg md:text-xl text-gray-400 font-manrope max-w-2xl mx-auto border-l-2 border-gold pl-6 text-left"
+                    className="mt-12 text-lg md:text-xl text-gray-400 font-manrope max-w-2xl mx-auto border-l-2 border-gold pl-6 text-left whitespace-pre-line"
                 >
-                    We operate with disciplined safety practices, job hazard analyses, and crew accountability. <span className="text-white font-bold">Zero compromise.</span>
+                    Safety is not a checkbox at Contreras Steel.
+                    It is a core responsibility.
+                    We operate with disciplined safety practices, job hazard analyses, and crew accountability to ensure every team member goes home safe — every day.
                 </motion.p>
             </div>
 

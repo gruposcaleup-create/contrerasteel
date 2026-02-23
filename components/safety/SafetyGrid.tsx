@@ -66,8 +66,8 @@ export function SafetyGrid() {
         <section className="py-24 bg-void-black relative">
             <div className="container mx-auto px-4">
                 <div className="mb-16">
-                    <h2 className="text-gold font-oswald uppercase tracking-[0.3em] text-sm mb-4">Ownership In Action</h2>
-                    <h3 className="text-4xl md:text-6xl text-white font-oswald uppercase font-bold">Protocol Matrix</h3>
+                    <h2 className="text-gold font-oswald uppercase tracking-[0.3em] text-sm mb-4">OUR SAFETY COMMITMENT</h2>
+                    <h3 className="text-4xl md:text-6xl text-white font-oswald uppercase font-bold">Safety is ownership in action.</h3>
                 </div>
 
                 <div
@@ -82,7 +82,7 @@ export function SafetyGrid() {
                         <SafetyCard
                             title="Pre-Task Planning"
                             icon={BlueprintIcon}
-                            detail="Hazard awareness before the work begins. Every shift starts with a comprehensive plan."
+                            detail="Pre-task planning and hazard awareness."
                             className="h-full bg-gradient-to-br from-zinc-900 to-black"
                             delay={0}
                         />
@@ -110,7 +110,7 @@ export function SafetyGrid() {
                         <SafetyCard
                             title="Total Accountability"
                             icon={TeamIcon}
-                            detail="Accountability at every level. No exceptions."
+                            detail="Accountability at every level."
                             className="h-full"
                             delay={0.2}
                         />
@@ -124,7 +124,7 @@ export function SafetyGrid() {
                         <SafetyCard
                             title="Site Discipline"
                             icon={BroomIcon}
-                            detail="Clean, organized job sites lead to safe outcomes."
+                            detail="Clean, organized job sites."
                             className="h-full"
                             delay={0.3}
                         />
@@ -138,7 +138,7 @@ export function SafetyGrid() {
                         <SafetyCard
                             title="Zero Shortcuts"
                             icon={StopIcon}
-                            detail="Every team member goes home safe — every day."
+                            detail="No shortcuts. No exceptions."
                             className="h-full border-gold/20"
                             delay={0.4}
                         />

@@ -16,8 +16,9 @@ interface ValuesBannerProps {
 }
 
 export function ValuesBanner({ content }: ValuesBannerProps) {
-    const bannerText = content?.values?.bannerText || "Discipline. Integrity. Extreme Ownership.";
-    const tickerText = content?.values?.tickerText || " SAFETY FIRST • QUALITY ALWAYS • PRECISION EXECUTION • MILITARY GRADE • ";
+    const bannerText = content?.values?.bannerText || "OUR STANDARD";
+    const subText = "These are not slogans. They are standards we live by on every project.";
+    const tickerText = content?.values?.tickerText || " EXTREME OWNERSHIP • DISCIPLINED EXECUTION • RELENTLESS STANDARDS • FAITHFUL STEWARDSHIP • GENERATIONAL IMPACT • ";
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -45,10 +46,19 @@ export function ValuesBanner({ content }: ValuesBannerProps) {
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight mb-8"
+                    className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight mb-4"
                 >
                     {bannerText}
                 </motion.h2>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                    className="text-xl text-gray-400 font-manrope font-light max-w-2xl mx-auto"
+                >
+                    {subText}
+                </motion.p>
             </div>
 
             {/* Ticker Container */}

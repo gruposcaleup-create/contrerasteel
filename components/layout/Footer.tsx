@@ -26,7 +26,7 @@ export function Footer({ content }: FooterProps) {
                             <span className="block h-[2px] bg-gradient-to-r from-[#D4AF37] to-[#C59D5F] w-12 mt-2" />
                         </Link>
                         <p className="text-gray-400 font-manrope text-sm leading-relaxed max-w-xs">
-                            Raising structures, empowering possibilities. We build with discipline, integrity, and extreme ownership.
+                            Raising structures, empowering possibilities.
                         </p>
                     </div>
 

@@ -8,11 +8,12 @@ import Image from "next/image";
 
 export function Hero({ content }: { content?: any }) {
     const heroContent = content?.hero || {
-        title: "Building Steel",
-        subtitle: "Building Legacy",
-        description: "Structural steel erection and fabrication delivered with discipline, integrity, and extreme ownership.",
+        title: "Building Steel.",
+        subtitle1: "Building People.",
+        subtitle2: "Building Legacy.",
+        description: "Structural steel erection and fabrication delivered with discipline, integrity, and extreme ownership.\n\nRaising structures, empowering possibilities.",
         ctaPrimary: "Request a Quote",
-        ctaSecondary: "Our Capabilities"
+        ctaSecondary: "View Services"
     };
 
     return (
@@ -44,12 +45,12 @@ export function Hero({ content }: { content?: any }) {
                         <TextReveal className="text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-white leading-[0.9]">
                             {heroContent.title}
                         </TextReveal>
-                        <div className="flex gap-4 md:gap-8 overflow-hidden">
-                            <TextReveal className="text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-gray-500 leading-[0.9]" delay={0.2}>
-                                {heroContent.subtitle.split(' ')[0]}
+                        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 overflow-hidden mt-4">
+                            <TextReveal className="text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gray-400 leading-[0.9]" delay={0.2}>
+                                {heroContent.subtitle1}
                             </TextReveal>
-                            <TextReveal className="text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-gold leading-[0.9]" delay={0.4}>
-                                {heroContent.subtitle.split(' ').slice(1).join(' ')}
+                            <TextReveal className="text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gold leading-[0.9]" delay={0.4}>
+                                {heroContent.subtitle2}
                             </TextReveal>
                         </div>
                     </div>
@@ -59,7 +60,7 @@ export function Hero({ content }: { content?: any }) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 0.8 }}
-                    className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-manrope font-light tracking-wide leading-relaxed"
+                    className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-manrope font-light tracking-wide leading-relaxed whitespace-pre-line"
                 >
                     {heroContent.description}
                 </motion.p>

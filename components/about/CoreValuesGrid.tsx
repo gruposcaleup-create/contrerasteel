@@ -6,32 +6,27 @@ import { motion } from "framer-motion";
 const values = [
     {
         title: "Extreme Ownership",
-        description: "We own everything in our world. There are no excuses and no one else to blame.",
+        description: "We own the outcome — always.",
         icon: Shield
     },
     {
         title: "Disciplined Execution",
-        description: "Discipline is the bridge between goals and accomplishment. We execute with precision.",
+        description: "We do what we said, when we said we’d do it.",
         icon: Target
     },
     {
         title: "Relentless Standards",
-        description: "We refuse to accept mediocrity. Our standard is excellence in every detail.",
+        description: "Good enough is never enough.",
         icon: Award
     },
     {
-        title: "Unwavering Integrity",
-        description: "We do what is right, not what is easy. Our word is our bond.",
+        title: "Faithful Stewardship",
+        description: "We are entrusted with people, resources, and influence.",
         icon: HeartHandshake
     },
     {
-        title: "Safety Standard",
-        description: "Safety is not a slogan; it is a way of life and a prerequisite for operation.",
-        icon: HardHat
-    },
-    {
         title: "Generational Impact",
-        description: "We build for the future, creating a lasting legacy through our work and people.",
+        description: "We build for generations, not just returns.",
         icon: TrendingUp
     }
 ];

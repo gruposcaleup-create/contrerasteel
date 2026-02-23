@@ -1,34 +1,35 @@
 {
   "hero": {
-    "title": "Building Steel",
-    "subtitle": "Building Legacy",
-    "description": "Structural steel erection and fabrication delivered with discipline, integrity, and extreme ownership.",
+    "title": "Building Steel.",
+    "subtitle1": "Building People.",
+    "subtitle2": "Building Legacy.",
+    "description": "Structural steel erection and fabrication delivered with discipline, integrity, and extreme ownership.\n\nRaising structures, empowering possibilities.",
     "ctaPrimary": "Request a Quote",
-    "ctaSecondary": "Our Capabilities",
+    "ctaSecondary": "View Services",
     "backgroundImage": "/1000000455.JPEG"
   },
   "intro": {
-    "heading": "Forged in Fire, Built for the Future",
-    "text": "At Contreras Steel, we don't just build structures; we build trust. With over 20 years of experience in the steel industry, we bring military-grade precision and unwavering commitment to every project. From complex commercial erections to custom fabrication, our team executes with safety, speed, and superior quality.",
+    "heading": "WHO WE ARE",
+    "text": "Contreras Steel LLC is a structural steel contractor built on faith, discipline, and execution.\n\nWe partner with general contractors, developers, and owners who value accountability, safety, and results.\n\nOur focus is simple: do the work right, lead people well, and build structures that last.",
     "image": "/IMG_4562.jpg"
   },
   "servicesTeaser": {
-    "heading": "Our Capabilities",
-    "subheading": "Precision & Power",
+    "heading": "WHAT WE DO",
+    "subheading": "",
     "items": [
       {
-        "title": "Structural Erection",
-        "description": "Safe and efficient erection of complex steel structures.",
+        "title": "Structural Steel Erection",
+        "description": "Safe, efficient, and disciplined field execution.",
         "image": "/IMG_3383.jpg"
       },
       {
-        "title": "Custom Fabrication",
-        "description": "Precision fabrication for unique architectural needs.",
+        "title": "Steel Fabrication",
+        "description": "Precision-built components that support demanding schedules.",
         "image": "/dji_fly_20230309_160218_8_1678396403036_photo.jpg"
       },
       {
-        "title": "Bar Joist & Decking",
-        "description": "Expert installation of floor and roof systems.",
+        "title": "Turnkey Fabricate & Erect",
+        "description": "One accountable partner from shop floor to final bolt.",
         "image": "/DJI_20250328123428_0015_W.JPG"
       }
     ]
@@ -59,8 +60,8 @@
     "copyright": "© 2026 Contreras Steel LLC. All Rights Reserved."
   },
   "contactPage": {
-    "title": "Let’s Build Something Lasting.",
-    "subtitle": "We are ready to discuss your next project. Reach out to our team for estimates, capabilities, or partnership opportunities.",
+    "title": "Let’s Build<br />Something<br /><span class='text-[#D4AF37]'>That Lasts.</span>",
+    "subtitle": "If you’re looking for a steel partner who values accountability, clarity, and execution — we’re ready to talk.",
     "addressTitle": "Location",
     "address": "800 2nd Ave NW, Cullman, AL 35055",
     "phoneTitle": "Phone",

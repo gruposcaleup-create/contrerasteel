@@ -25,8 +25,11 @@ export default function ServicesPage() {
                         Structural Steel <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#C59D5F]">Solutions</span>
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-2xl font-manrope">
-                        Built on Discipline and Accountability. We deliver precision in every weld and integrity in every connection.
+                    <p className="text-xl text-gray-400 max-w-2xl font-manrope whitespace-pre-line">
+                        Built on Discipline and Accountability.
+                        Contreras Steel provides structural steel services for commercial, industrial, and institutional projects where execution, safety, and accountability matter.
+
+                        We don’t overpromise. We deliver.
                     </p>
                 </div>
             </div>
@@ -44,27 +47,25 @@ export default function ServicesPage() {
                     <ServiceSection
                         id="erection"
                         title="Structural Steel Erection"
-                        subtitle="Disciplined Field Execution"
+                        subtitle="Disciplined Field Execution. Built to Perform."
                         imageSrc="/IMG_3383.jpg"
                         imageAlt="Steel Erection"
                         align="left"
                     >
                         <p>
-                            We handle complex structural steel erection with precision and safety.
-                            Our teams are trained to execute with extreme ownership, ensuring that every
-                            beam, column, and connection meets the highest standards of quality.
+                            Our erection crews operate with precision, coordination, and respect for schedule. Every lift, bolt, and weld is executed with intent and accountability.
                         </p>
-                        <ul className="grid grid-cols-1 gap-4 mt-8">
+                        <h4 className="text-[#D4AF37] font-oswald uppercase tracking-widest mt-8 mb-4">Capabilities</h4>
+                        <ul className="grid grid-cols-1 gap-4">
                             {[
-                                "Complex Structural Steel Erection",
-                                "Joist and Deck Installation",
-                                "Miscellaneous Metals Installation",
-                                "Rigging and Hoisting Plans",
-                                "On-site Welding and Fabrication",
-                                "Safety-First Field Operations"
+                                "Offloading and staging of structural steel",
+                                "Erection of columns, beams, and bracing",
+                                "Bolting and field welding per contract documents",
+                                "Coordination with general contractors and trades",
+                                "Schedule-driven manpower planning"
                             ].map((item, i) => (
-                                <li key={i} className="flex items-center gap-4 group">
-                                    <div className="w-1.5 h-1.5 bg-[#D4AF37] rounded-full group-hover:scale-150 transition-transform" />
+                                <li key={i} className="flex items-start gap-4 group">
+                                    <div className="w-1.5 h-1.5 mt-2 bg-[#D4AF37] rounded-full group-hover:scale-150 transition-transform" />
                                     <span className="text-gray-300 group-hover:text-white transition-colors">{item}</span>
                                 </li>
                             ))}
@@ -74,39 +75,55 @@ export default function ServicesPage() {
                     <ServiceSection
                         id="fabrication"
                         title="Steel Fabrication"
-                        subtitle="Precision Built. Field Ready"
+                        subtitle="Precision Built. Field Ready."
                         imageSrc="/dji_fly_20230309_160218_8_1678396403036_photo.jpg"
                         imageAlt="Steel Fabrication"
                         align="right"
                     >
                         <p>
-                            Our fabrication process ensures constructability and quality control from start to finish.
-                            We utilize advanced technology and skilled craftsmanship to deliver components that fit perfectly in the field, reducing downtime and costs.
+                            Our fabrication process is designed to support the field — not slow it down. Every component is produced with accuracy, consistency, and schedule in mind.
                         </p>
-                        <p>
-                            From heavy columns to intricate architectural metals, our shop is equipped to handle diverse fabrication needs. We maintain strict quality assurance protocols to guarantee compliance with all specifications.
-                        </p>
+                        <h4 className="text-[#D4AF37] font-oswald uppercase tracking-widest mt-8 mb-4">Capabilities</h4>
+                        <ul className="grid grid-cols-1 gap-4">
+                            {[
+                                "Structural steel members",
+                                "Miscellaneous steel fabrication",
+                                "Quality-controlled shop processes",
+                                "Clear shop-to-field coordination"
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-start gap-4 group">
+                                    <div className="w-1.5 h-1.5 mt-2 bg-[#D4AF37] rounded-full group-hover:scale-150 transition-transform" />
+                                    <span className="text-gray-300 group-hover:text-white transition-colors">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </ServiceSection>
 
                     <ServiceSection
                         id="turnkey"
                         title="Turnkey Fabricate & Erect"
-                        subtitle="One Partner. Total Accountability"
+                        subtitle="One Partner. Total Accountability."
                         imageSrc="/DJI_20250328123428_0015_W.JPG"
                         imageAlt="Turnkey Construction"
                         align="left"
                     >
                         <p>
-                            Simplify your project with our comprehensive turnkey solutions. By handling both fabrication and erection, we eliminate the finger-pointing and communication gaps that often plague construction projects.
+                            For clients seeking simplicity and reduced risk, our turnkey solutions provide a single point of responsibility from shop floor to final bolt.
                         </p>
-                        <div className="my-8 p-6 border-l-4 border-gold bg-white/5">
-                            <p className="font-bold text-white text-lg font-oswald uppercase tracking-wide">
-                                One contract. One point of contact. One responsible party.
-                            </p>
-                        </div>
-                        <p>
-                            This integrated approach allows for seamless coordination, optimized schedules, and a unified focus on project success. We own the outcome from the drawing board to the final bolt.
-                        </p>
+                        <h4 className="text-[#D4AF37] font-oswald uppercase tracking-widest mt-8 mb-4">Benefits</h4>
+                        <ul className="grid grid-cols-1 gap-4">
+                            {[
+                                "Streamlined communication",
+                                "Reduced coordination risk",
+                                "Improved schedule control",
+                                "Single-source accountability"
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-start gap-4 group">
+                                    <div className="w-1.5 h-1.5 mt-2 bg-[#D4AF37] rounded-full group-hover:scale-150 transition-transform" />
+                                    <span className="text-gray-300 group-hover:text-white transition-colors">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </ServiceSection>
                 </main>
             </div>

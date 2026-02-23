@@ -31,10 +31,10 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8">
                         <div className="prose prose-xl prose-invert text-gray-300 font-manrope">
                             <p className="mb-6 first-letter:text-5xl first-letter:font-oswald first-letter:text-gold first-letter:mr-2 first-letter:float-left">
-                                Contreras Steel was built through adversity. In an industry that often prioritizes speed over quality, we chose a different path. We believe that business is a responsibility—to our clients, our employees, and our community.
+                                Contreras Steel was built through adversity, discipline, and faith. What began as a steel erection company became a platform to build people, families, and communities.
                             </p>
                             <p>
-                                From humble beginnings, we have grown into a premier structural steel partner, not by cutting corners, but by doubling down on discipline. Every beam we erect is a testament to our commitment to doing things the right way.
+                                We believe business is a responsibility — not just a revenue stream.
                             </p>
                         </div>
                     </div>
@@ -56,14 +56,14 @@ export default function AboutPage() {
                         <div className="absolute top-4 right-4 text-6xl font-oswald font-bold text-white/5 select-none transition-transform group-hover:scale-110">M</div>
                         <h3 className="text-2xl font-oswald text-[#D4AF37] mb-6 uppercase tracking-widest">Our Mission</h3>
                         <blockquote className="text-3xl text-white font-oswald uppercase leading-tight">
-                            "To deliver superior structural steel solutions by empowering our people, honoring our partners, and executing with relentless discipline."
+                            "To deliver world-class structural steel services with uncompromising integrity, disciplined execution, and extreme ownership—while empowering our people and serving our community."
                         </blockquote>
                     </div>
                     <div className="p-10 border border-white/10 bg-white/5 backdrop-blur-sm rounded-sm relative group hover:border-[#D4AF37]/50 transition-colors duration-500">
                         <div className="absolute top-4 right-4 text-6xl font-oswald font-bold text-white/5 select-none transition-transform group-hover:scale-110">V</div>
                         <h3 className="text-2xl font-oswald text-[#D4AF37] mb-6 uppercase tracking-widest">Our Vision</h3>
                         <blockquote className="text-3xl text-white font-oswald uppercase leading-tight">
-                            "To be the standard-bearer for integrity and excellence in the steel industry, building a legacy that outlasts steel itself."
+                            "To build structures that outlast generations by leading with faith, discipline, and excellence—creating lasting impact beyond the jobsite."
                         </blockquote>
                     </div>
                 </div>

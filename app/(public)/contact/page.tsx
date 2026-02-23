@@ -25,10 +25,10 @@ export default async function ContactPage() {
                     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5" />
 
                     <div>
-                        <h1 className="text-5xl md:text-7xl font-oswald text-white uppercase leading-none mb-8" dangerouslySetInnerHTML={{ __html: contactPage?.title?.replace(/\n/g, '<br />') || "Let’s Build<br />Something<br /><span class='text-[#D4AF37]'>Lasting.</span>" }}>
+                        <h1 className="text-5xl md:text-7xl font-oswald text-white uppercase leading-none mb-8" dangerouslySetInnerHTML={{ __html: contactPage?.title?.replace(/\n/g, '<br />') || "Let’s Build<br />Something<br /><span class='text-[#D4AF37]'>That Lasts.</span>" }}>
                         </h1>
                         <p className="text-gray-400 text-lg font-manrope max-w-md">
-                            {contactPage?.subtitle || "We are ready to discuss your next project. Reach out to our team for estimates, capabilities, or partnership opportunities."}
+                            {contactPage?.subtitle || "If you’re looking for a steel partner who values accountability, clarity, and execution — we’re ready to talk."}
                         </p>
                     </div>
 
