@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { CoreValuesGrid } from "@/components/about/CoreValuesGrid";
 import { Timeline } from "@/components/about/Timeline";
+
+export const metadata: Metadata = {
+    title: "About Us — Our Story, Mission & Values",
+    description: "Learn about Contreras Steel LLC — a veteran-founded steel company in Cullman, Alabama built on faith, discipline, and extreme ownership.",
+    openGraph: {
+        title: "About Contreras Steel LLC",
+        description: "Built on faith, proven through execution. Discover the story and values behind Contreras Steel.",
+    },
+};
 
 export default function AboutPage() {
     return (

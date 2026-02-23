@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { getContent } from "@/lib/content";
+
+export const metadata: Metadata = {
+    title: "Contact Us — Get a Quote or Schedule a Consultation",
+    description: "Ready to start your next steel project? Contact Contreras Steel LLC in Cullman, AL at +1 (256)-747-5012 or projects@contrerassteel.com for estimates and capabilities.",
+    openGraph: {
+        title: "Contact Contreras Steel LLC",
+        description: "Request a quote or schedule a consultation. Structural steel erection and fabrication in Cullman, Alabama.",
+    },
+};
 
 export default async function ContactPage() {
     const content = await getContent();
@@ -27,7 +37,7 @@ export default async function ContactPage() {
                             <MapPin className="h-6 w-6 text-[#D4AF37] mr-6 mt-1 group-hover:scale-110 transition-transform" />
                             <div>
                                 <h3 className="text-sm font-oswald text-[#D4AF37] uppercase tracking-widest mb-1">{contactPage?.addressTitle || "Headquarters"}</h3>
-                                <p className="text-white font-manrope whitespace-pre-line">{contactPage?.address || "123 Industrial Way\nSteel City, TX 75000"}</p>
+                                <p className="text-white font-manrope whitespace-pre-line">{contactPage?.address || "800 2nd Ave NW\nCullman, AL 35055"}</p>
                             </div>
                         </div>
 
@@ -35,7 +45,7 @@ export default async function ContactPage() {
                             <Phone className="h-6 w-6 text-[#D4AF37] mr-6 mt-1 group-hover:scale-110 transition-transform" />
                             <div>
                                 <h3 className="text-sm font-oswald text-[#D4AF37] uppercase tracking-widest mb-1">{contactPage?.phoneTitle || "Phone"}</h3>
-                                <p className="text-white font-manrope">{contactPage?.phone || "+1 (555) 123-4567"}</p>
+                                <p className="text-white font-manrope">{contactPage?.phone || "+1 (256)-747-5012"}</p>
                             </div>
                         </div>
 
@@ -43,7 +53,7 @@ export default async function ContactPage() {
                             <Mail className="h-6 w-6 text-[#D4AF37] mr-6 mt-1 group-hover:scale-110 transition-transform" />
                             <div>
                                 <h3 className="text-sm font-oswald text-[#D4AF37] uppercase tracking-widest mb-1">{contactPage?.emailTitle || "Email"}</h3>
-                                <p className="text-white font-manrope">{contactPage?.email || "info@contrerassteel.com"}</p>
+                                <p className="text-white font-manrope">{contactPage?.email || "projects@contrerassteel.com"}</p>
                             </div>
                         </div>
                     </div>

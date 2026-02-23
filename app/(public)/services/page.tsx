@@ -1,7 +1,18 @@
+import type { Metadata } from "next";
 import { ServicesNav } from "@/components/services/ServicesNav";
 import { ServiceSection } from "@/components/services/ServiceSection";
 import { CheckCircle2 } from "lucide-react";
 import { ParallaxImage } from "@/components/ui/ParallaxImage";
+
+export const metadata: Metadata = {
+    title: "Structural Steel Services — Erection, Fabrication & Turnkey",
+    description: "Contreras Steel offers structural steel erection, custom fabrication, bar joist & decking installation, and turnkey fabricate-and-erect solutions in Alabama.",
+    openGraph: {
+        title: "Steel Services | Contreras Steel LLC",
+        description: "Structural erection, custom fabrication, and turnkey solutions delivered with military precision.",
+        images: [{ url: "/IMG_3383.jpg", width: 1200, height: 630, alt: "Steel Erection Services" }],
+    },
+};
 
 export default function ServicesPage() {
     return (
