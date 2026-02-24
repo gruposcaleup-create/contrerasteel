@@ -56,10 +56,11 @@ export default function ContentEditor({ initialContent }: { initialContent: any 
             if (res.ok) {
                 setMessage('Content saved successfully!');
             } else {
-                setMessage('Failed to save content.');
+                const errData = await res.json().catch(() => ({}));
+                setMessage(`Failed to save content: ${errData.error || res.status + ' ' + res.statusText}`);
             }
-        } catch (error) {
-            setMessage('Error saving content.');
+        } catch (error: any) {
+            setMessage(`Error saving content: ${error.message}`);
         } finally {
             setSaving(false);
         }
@@ -107,9 +108,10 @@ export default function ContentEditor({ initialContent }: { initialContent: any 
                             value={content.hero?.backgroundImage || ''}
                             onChange={(url) => handleChange('hero', 'backgroundImage', url)}
                         />
-                        <div className="grid gap-4 md:grid-cols-2">
+                        <div className="grid gap-4 md:grid-cols-3">
                             <Input label="Title" value={content.hero?.title} onChange={(v) => handleChange('hero', 'title', v)} />
-                            <Input label="Subtitle" value={content.hero?.subtitle} onChange={(v) => handleChange('hero', 'subtitle', v)} />
+                            <Input label="Subtitle 1" value={content.hero?.subtitle1} onChange={(v) => handleChange('hero', 'subtitle1', v)} />
+                            <Input label="Subtitle 2" value={content.hero?.subtitle2} onChange={(v) => handleChange('hero', 'subtitle2', v)} />
                         </div>
                         <TextArea label="Description" value={content.hero?.description} onChange={(v) => handleChange('hero', 'description', v)} />
                         <div className="grid gap-4 md:grid-cols-2">

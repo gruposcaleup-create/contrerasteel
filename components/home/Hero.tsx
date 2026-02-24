@@ -43,14 +43,14 @@ export function Hero({ content }: { content?: any }) {
                 >
                     <div className="mb-6 flex flex-col items-center justify-center w-full">
                         <TextReveal className="text-[14vw] sm:text-6xl md:text-8xl lg:text-9xl font-bold font-oswald uppercase tracking-tighter text-white leading-[0.9]">
-                            {heroContent.title}
+                            {heroContent.title || "Building Steel."}
                         </TextReveal>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 md:gap-8 mt-4 w-full">
                             <TextReveal className="text-[9vw] sm:text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gray-400 leading-[0.9] text-center" delay={0.2}>
-                                {heroContent.subtitle1}
+                                {heroContent.subtitle1 || "Building People."}
                             </TextReveal>
                             <TextReveal className="text-[9vw] sm:text-4xl md:text-6xl lg:text-7xl font-bold font-oswald uppercase tracking-tighter text-gold leading-[0.9] text-center" delay={0.4}>
-                                {heroContent.subtitle2}
+                                {heroContent.subtitle2 || "Building Legacy."}
                             </TextReveal>
                         </div>
                     </div>
@@ -107,12 +107,12 @@ export function Hero({ content }: { content?: any }) {
                 >
                     <Link href="/contact">
                         <MagneticButton variant="primary" className="min-w-[200px]">
-                            {heroContent.ctaPrimary}
+                            {heroContent.ctaPrimary || "Request a Quote"}
                         </MagneticButton>
                     </Link>
                     <Link href="/services">
                         <MagneticButton variant="outline" className="min-w-[200px] border-white text-white hover:bg-white/10 hover:text-white">
-                            {heroContent.ctaSecondary}
+                            {heroContent.ctaSecondary || "View Services"}
                         </MagneticButton>
                     </Link>
                 </motion.div>
@@ -126,7 +126,6 @@ export function Hero({ content }: { content?: any }) {
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500"
             >
                 <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-[#D4AF37] to-transparent" />
-                <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
             </motion.div>
         </section>
     );

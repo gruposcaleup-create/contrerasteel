@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Steel Services | Contreras Steel LLC",
         description: "Structural erection, custom fabrication, and turnkey solutions delivered with military precision.",
-        images: [{ url: "/IMG_3383.jpg", width: 1200, height: 630, alt: "Steel Erection Services" }],
+        images: [{ url: "/DJI_20250328123428_0015_W.JPG", width: 1200, height: 630, alt: "Steel Erection Services" }],
     },
 };
 
@@ -26,11 +26,12 @@ export default function ServicesPage() {
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#C59D5F]">Solutions</span><br />
                         Built on Discipline and Accountability.
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-2xl font-manrope whitespace-pre-line">
+                    <p className="text-xl text-gray-400 max-w-2xl font-manrope whitespace-pre-line mb-8">
                         Contreras Steel provides structural steel services for commercial, industrial, and institutional projects where execution, safety, and accountability matter.
-
-                        We don’t overpromise. We deliver.
                     </p>
+                    <h2 className="text-3xl md:text-5xl font-oswald font-bold text-white uppercase tracking-tight leading-none">
+                        We don’t overpromise. We deliver.
+                    </h2>
                 </div>
             </div>
 
@@ -48,7 +49,7 @@ export default function ServicesPage() {
                         id="erection"
                         title="Structural Steel Erection"
                         subtitle="Disciplined Field Execution. Built to Perform."
-                        imageSrc="/IMG_3383.jpg"
+                        imageSrc="/DJI_20250328123428_0015_W.JPG"
                         imageAlt="Steel Erection"
                         align="left"
                     >
@@ -103,7 +104,7 @@ export default function ServicesPage() {
                         id="turnkey"
                         title="Turnkey Fabricate & Erect"
                         subtitle="One Partner. Total Accountability."
-                        imageSrc="/DJI_20250328123428_0015_W.JPG"
+                        imageSrc="/IMG_0105.jpg"
                         imageAlt="Turnkey Construction"
                         align="left"
                     >

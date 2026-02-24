@@ -20,7 +20,7 @@ export function ServicesTeaser({ content }: ServicesTeaserProps) {
         {
             title: "Structural Steel Erection",
             description: "Disciplined field execution. Precision alignment and bolting.",
-            image: "/IMG_3383.jpg",
+            image: "/DJI_20250328123428_0015_W.JPG",
             link: "/services#erection",
             number: "01"
         },
@@ -34,7 +34,7 @@ export function ServicesTeaser({ content }: ServicesTeaserProps) {
         {
             title: "Turnkey Fabricate & Erect",
             description: "One partner, total accountability. From design to erection.",
-            image: "/DJI_20250328123428_0015_W.JPG",
+            image: "/IMG_0105.jpg",
             link: "/services#turnkey",
             number: "03"
         }

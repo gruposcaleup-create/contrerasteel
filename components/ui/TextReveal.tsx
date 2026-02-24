@@ -9,7 +9,8 @@ interface TextRevealProps {
 }
 
 export function TextReveal({ children, className, delay = 0 }: TextRevealProps) {
-    const words = children.split(" ");
+    const textToReveal = children || "";
+    const words = textToReveal.split(" ");
 
     return (
         <span className={className}>
