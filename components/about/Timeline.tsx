@@ -39,9 +39,9 @@ export function Timeline() {
                         className={`flex flex-col md:flex-row gap-8 items-start md:items-center relative ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
                     >
                         {/* Content Side */}
-                        <div className={`flex-1 w-full pl-12 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'} relative`}>
-                            <div className="relative z-10 p-2">
-                                <span className={`text-[#D4AF37] font-oswald text-6xl md:text-8xl font-bold opacity-10 absolute top-1/2 -translate-y-1/2 select-none ${index % 2 === 0 ? 'right-0' : 'left-0'} -z-10`}>
+                        <div className={`flex-1 w-full pl-12 md:pl-0 relative ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12'}`}>
+                            <div className={`${index % 2 === 0 ? 'md:text-left' : 'md:text-right'} relative z-10`}>
+                                <span className={`text-[#D4AF37] font-oswald text-6xl md:text-8xl font-bold opacity-10 absolute top-1/2 -translate-y-1/2 select-none ${index % 2 === 0 ? 'left-0 md:-left-4' : 'right-0 md:-right-4'} -z-10 pointer-events-none`}>
                                     {event.year}
                                 </span>
                                 <h3 className="text-2xl font-oswald text-white uppercase mb-2">{event.title}</h3>
