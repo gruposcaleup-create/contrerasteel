@@ -29,7 +29,7 @@ export default function AboutPage() {
             <section className="py-24 bg-void-black">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8">
-                        <div className="prose prose-xl prose-invert text-gray-300 font-manrope">
+                        <div className="prose text-xl md:text-2xl prose-invert text-gray-300 font-manrope">
                             <p className="mb-6 first-letter:text-5xl first-letter:font-oswald first-letter:text-gold first-letter:mr-2 first-letter:float-left">
                                 Contreras Steel was built through adversity, discipline, and faith. What began as a steel erection company became a platform to build people, families, and communities.
                             </p>
@@ -54,15 +54,15 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
                     <div className="p-10 border border-white/10 bg-white/5 backdrop-blur-sm rounded-sm relative group hover:border-[#D4AF37]/50 transition-colors duration-500">
                         <div className="absolute top-4 right-4 text-6xl font-oswald font-bold text-white/5 select-none transition-transform group-hover:scale-110">M</div>
-                        <h3 className="text-2xl font-oswald text-[#D4AF37] mb-6 uppercase tracking-widest">Our Mission</h3>
-                        <blockquote className="text-3xl text-white font-oswald uppercase leading-tight">
+                        <h3 className="text-3xl font-oswald text-[#D4AF37] mb-6 uppercase tracking-widest leading-tight">Our Mission</h3>
+                        <blockquote className="text-xl text-white font-manrope font-light leading-relaxed">
                             "To deliver world-class structural steel services with uncompromising integrity, disciplined execution, and extreme ownership—while empowering our people and serving our community."
                         </blockquote>
                     </div>
                     <div className="p-10 border border-white/10 bg-white/5 backdrop-blur-sm rounded-sm relative group hover:border-[#D4AF37]/50 transition-colors duration-500">
                         <div className="absolute top-4 right-4 text-6xl font-oswald font-bold text-white/5 select-none transition-transform group-hover:scale-110">V</div>
-                        <h3 className="text-2xl font-oswald text-[#D4AF37] mb-6 uppercase tracking-widest">Our Vision</h3>
-                        <blockquote className="text-3xl text-white font-oswald uppercase leading-tight">
+                        <h3 className="text-3xl font-oswald text-[#D4AF37] mb-6 uppercase tracking-widest leading-tight">Our Vision</h3>
+                        <blockquote className="text-xl text-white font-manrope font-light leading-relaxed">
                             "To build structures that outlast generations by leading with faith, discipline, and excellence—creating lasting impact beyond the jobsite."
                         </blockquote>
                     </div>

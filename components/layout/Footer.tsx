@@ -65,13 +65,13 @@ export function Footer({ content }: FooterProps) {
                     <div>
                         <h3 className="text-gold font-oswald uppercase tracking-widest text-sm mb-6">Follow Us</h3>
                         <div className="flex gap-4 mb-8">
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-black transition-all duration-300">
+                            <a href="https://www.linkedin.com/in/cesar-contreras-b49b7b283?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-black transition-all duration-300">
                                 <Linkedin className="h-4 w-4" />
                             </a>
                             <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-black transition-all duration-300">
                                 <Instagram className="h-4 w-4" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-black transition-all duration-300">
+                            <a href="https://www.facebook.com/share/14VxnyYFnox/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-black transition-all duration-300">
                                 <Facebook className="h-4 w-4" />
                             </a>
                         </div>

@@ -11,7 +11,7 @@ const steps = [
     },
     {
         title: "Precision Fabrication",
-        description: "Components produced with accuracy and consistency in our state-of-the-art facility.",
+        description: "Components produced with accuracy and consistency.",
         number: "02"
     },
     {

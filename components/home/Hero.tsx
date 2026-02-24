@@ -56,14 +56,48 @@ export function Hero({ content }: { content?: any }) {
                     </div>
                 </motion.div>
 
-                <motion.p
+                <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 0.8 }}
-                    className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-manrope font-light tracking-wide leading-relaxed whitespace-pre-line"
+                    className="max-w-3xl mx-auto mb-12"
                 >
-                    {heroContent.description}
-                </motion.p>
+                    {(() => {
+                        const text = heroContent.description || "";
+                        const highlight = "Raising structures, empowering possibilities.";
+                        const idx = text.indexOf(highlight);
+
+                        if (idx === -1) {
+                            return (
+                                <p className="text-lg md:text-2xl text-gray-300 font-manrope font-light tracking-wide leading-relaxed whitespace-pre-line mb-4">
+                                    {text}
+                                </p>
+                            );
+                        }
+
+                        const before = text.slice(0, idx);
+                        const match = text.slice(idx, idx + highlight.length);
+                        const after = text.slice(idx + highlight.length);
+
+                        return (
+                            <>
+                                {before.trim() && (
+                                    <p className="text-lg md:text-2xl text-gray-300 font-manrope font-light tracking-wide leading-relaxed whitespace-pre-line mb-6">
+                                        {before.trim()}
+                                    </p>
+                                )}
+                                <p className="text-2xl md:text-4xl text-white font-manrope font-bold tracking-wide leading-relaxed">
+                                    {match}
+                                </p>
+                                {after.trim() && (
+                                    <p className="text-lg md:text-2xl text-gray-300 font-manrope font-light tracking-wide leading-relaxed whitespace-pre-line mt-6">
+                                        {after.trim()}
+                                    </p>
+                                )}
+                            </>
+                        );
+                    })()}
+                </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

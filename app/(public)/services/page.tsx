@@ -23,10 +23,10 @@ export default function ServicesPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <h1 className="text-5xl md:text-7xl font-oswald font-bold text-white mb-6 uppercase tracking-tight leading-none">
                         Structural Steel <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#C59D5F]">Solutions</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#C59D5F]">Solutions</span><br />
+                        Built on Discipline and Accountability.
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl font-manrope whitespace-pre-line">
-                        Built on Discipline and Accountability.
                         Contreras Steel provides structural steel services for commercial, industrial, and institutional projects where execution, safety, and accountability matter.
 
                         We don’t overpromise. We deliver.

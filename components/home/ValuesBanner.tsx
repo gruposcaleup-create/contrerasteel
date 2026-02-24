@@ -2,6 +2,8 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const values = [
     "Extreme Ownership",
@@ -28,59 +30,107 @@ export function ValuesBanner({ content }: ValuesBannerProps) {
     const y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
     return (
-        <section ref={ref} className="relative py-40 overflow-hidden border-t border-b border-white/5 bg-zinc-900 flex items-center justify-center">
-            {/* Parallax Background */}
-            <motion.div
-                style={{ y }}
-                className="absolute inset-0 z-0 h-[140%] -top-[20%]"
-            >
-                <div
-                    className="absolute inset-0 bg-cover bg-center opacity-30"
-                    style={{ backgroundImage: "url('https://picsum.photos/id/249/2000/1200')" }} // Welding/Bridge
-                />
-                <div className="absolute inset-0 bg-void-black/80" />
-            </motion.div>
-
-            <div className="container mx-auto px-4 relative z-10 text-center">
-                <motion.h2
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight mb-4"
+        <>
+            <section ref={ref} className="relative py-24 overflow-hidden border-t border-b border-white/5 bg-zinc-900 flex items-center justify-center">
+                {/* Parallax Background */}
+                <motion.div
+                    style={{ y }}
+                    className="absolute inset-0 z-0 h-[140%] -top-[20%]"
                 >
-                    {bannerText}
-                </motion.h2>
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                    className="text-xl text-gray-400 font-manrope font-light max-w-2xl mx-auto"
-                >
-                    {subText}
-                </motion.p>
-            </div>
+                    <div
+                        className="absolute inset-0 bg-cover bg-center opacity-30"
+                        style={{ backgroundImage: "url('https://picsum.photos/id/249/2000/1200')" }} // Welding/Bridge
+                    />
+                    <div className="absolute inset-0 bg-void-black/80" />
+                </motion.div>
 
-            {/* Ticker Container */}
-            <div className="absolute bottom-0 left-0 w-full bg-gold py-4 border-t border-[#C59D5F] z-20">
-                <div className="flex whitespace-nowrap overflow-hidden">
-                    <motion.div
-                        className="flex"
-                        animate={{ x: ["0%", "-50%"] }}
-                        transition={{
-                            repeat: Infinity,
-                            ease: "linear",
-                            duration: 30
-                        }}
+                <div className="container mx-auto px-4 relative z-10 text-center">
+                    <motion.h2
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight mb-4"
                     >
-                        {[1, 2, 3, 4].map((_, index) => (
-                            <span key={index} className="flex items-center text-void-black font-bold font-oswald text-xl md:text-2xl tracking-widest uppercase px-8">
-                                {tickerText}
-                            </span>
-                        ))}
+                        {bannerText}
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="text-xl text-gray-400 font-manrope font-light max-w-2xl mx-auto"
+                    >
+                        {subText}
+                    </motion.p>
+                </div>
+
+                {/* Ticker Container */}
+                <div className="absolute bottom-0 left-0 w-full bg-gold py-4 border-t border-[#C59D5F] z-20">
+                    <div className="flex whitespace-nowrap overflow-hidden">
+                        <motion.div
+                            className="flex"
+                            animate={{ x: ["0%", "-50%"] }}
+                            transition={{
+                                repeat: Infinity,
+                                ease: "linear",
+                                duration: 30
+                            }}
+                        >
+                            {[1, 2, 3, 4].map((_, index) => (
+                                <span key={index} className="flex items-center text-void-black font-bold font-oswald text-xl md:text-2xl tracking-widest uppercase px-8">
+                                    {tickerText}
+                                </span>
+                            ))}
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Call to Action Section */}
+            <section className="py-24 bg-void-black text-center px-4 relative overflow-hidden border-b border-white/5">
+                <div className="container mx-auto relative z-10 flex flex-col items-center">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight mb-6"
+                    >
+                        LET'S BUILD SOMETHING THAT LASTS
+                    </motion.h2>
+                    <div className="mb-10">
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            className="text-xl md:text-2xl text-gray-400 font-manrope font-light mb-1"
+                        >
+                            Have a project coming up?
+                        </motion.p>
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="text-xl md:text-2xl text-white font-manrope font-bold"
+                        >
+                            Let's talk.
+                        </motion.p>
+                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        <Link href="/contact">
+                            <MagneticButton variant="primary" className="min-w-[200px]">
+                                Request a Quote
+                            </MagneticButton>
+                        </Link>
                     </motion.div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
